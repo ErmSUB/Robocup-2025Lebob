@@ -29,9 +29,9 @@ class Robot:
         )
 
 def main():
-    robot.drivebase.straight(100)
+    Robot.drivebase.straight(100)
 
-robot = Robot()
 
-if __name__ == "main":
+
+if __name__ == "__main__":
     main()
