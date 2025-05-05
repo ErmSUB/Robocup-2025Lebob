@@ -52,11 +52,15 @@ def main():
 
         # Turn if needed
         if colour_left == Color.BLACK and colour_right == Color.WHITE: # Left
-            robot.turn_in_degrees(-1)
+            while colour_left == Color.BLACK 
+                colour_left = robot.colour_sensor_left.color()
+                robot.turn_in_degrees(-1)
         elif colour_left == Color.WHITE and colour_right == Color.BLACK: # Right
-            robot.turn_in_degrees(1)
+            while colour_left == Color.BLACK
+                colour_right = robot.colour_sensor_right.color()
+                robot.turn_in_degrees(1)
         else: # Forward
             robot.move_forward(1)
-
-if __name__ == "main":
+#Sean and aaron, respectfully give me a full tutorial of pybricks and spike
+if __name__ == "__main__":#Subesh: what is the point of this again
     main()
